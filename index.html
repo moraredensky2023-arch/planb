@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan B | Tu plan para quedarte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <a href="index.html" class="logo">
+      <img src="Imagenes/Logo.png" alt="Logo de Plan B">
+    </a>
+
+    <nav class="menu">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="espacio.html">Espacio</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="contacto.html">Contacto</a>
+
+      <a href="Carrito.html"
+         class="icono-carrito"
+         aria-label="Carrito"
+         title="Carrito">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="26"
+             height="26"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             aria-hidden="true">
+
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" role="img" aria-label="cafeteria principal">
+
+      <div class="hero-texto recuadro-inicio">
+
+        <h1>PLAN B</h1>
+
+        <p>Tu plan para quedarte</p>
+
+        <a href="menu.html" class="boton">
+          Ver menú
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="sobre-nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>
+        Plan B es el lugar donde el café es solo el comienzo. Un espacio para
+        estudiar, trabajar, encontrarse y desconectar, acompañado de buena comida,
+        café y juegos de mesa para compartir.
+        <strong>Porque a veces, el mejor plan es simplemente quedarse.</strong>
+      </p>
+    </section>
+
+    <!-- ======================================
+     SECCIÓN FLORES EN INICIO
+====================================== -->
+
+<section class="inicio-flores">
+
+  <div class="inicio-flores-texto">
+
+    <h2>Que nunca falten las flores</h2>
+
+    <p>
+      Porque los pequeños detalles hacen grandes momentos.
+      En Plan B también encontrás ramos de flores para
+      regalar, sorprender o simplemente alegrar tu día.
+    </p>
+
+    <a href="Carrito.html" class="boton-inicio-flores">
+      Descubrí nuestros ramos
+    </a>
+
+  </div>
+
+  <!-- CARRUSEL DE FLORES SIN JAVASCRIPT -->
+
+  <div class="carrusel-flores">
+
+    <!-- CONTROLES OCULTOS -->
+    <input type="radio" name="flor-activa" id="flor-1" checked>
+    <input type="radio" name="flor-activa" id="flor-2">
+    <input type="radio" name="flor-activa" id="flor-3">
+    <input type="radio" name="flor-activa" id="flor-4">
+    <input type="radio" name="flor-activa" id="flor-5">
+    <input type="radio" name="flor-activa" id="flor-6">
+    <input type="radio" name="flor-activa" id="flor-7">
+
+    <div class="flores-escenario">
+
+      <!-- RAMO 1 -->
+      <div class="flor-slide slide-1">
+        <img src="Imagenes/Ramos de flores /ramo 11.png"
+             alt="Ramo Primavera">
+      </div>
+
+      <!-- RAMO 2 -->
+      <div class="flor-slide slide-2">
+        <img src="Imagenes/Ramos de flores /ramo 22.png"
+             alt="Ramo Jazmín">
+      </div>
+
+      <!-- RAMO 3 -->
+      <div class="flor-slide slide-3">
+        <img src="Imagenes/Ramos de flores /ramo 33.png"
+             alt="Ramo Vibrante">
+      </div>
+
+      <!-- RAMO 4 -->
+      <div class="flor-slide slide-4">
+        <img src="Imagenes/Ramos de flores /ramo 44.png"
+             alt="Ramo Atardecer">
+      </div>
+
+      <!-- RAMO 5 -->
+      <div class="flor-slide slide-5">
+        <img src="Imagenes/Ramos de flores /ramo 55.png"
+             alt="Ramo Orquídea">
+      </div>
+
+      <!-- RAMO 6 -->
+      <div class="flor-slide slide-6">
+        <img src="Imagenes/Ramos de flores /ramo 66.png"
+             alt="Ramo Campestre">
+      </div>
+
+      <!-- RAMO 7 -->
+      <div class="flor-slide slide-7">
+        <img src="Imagenes/Ramos de flores /ramo 77.png"
+             alt="Ramo Silvestre">
+      </div>
+
+    </div>
+
+    <!-- FLECHAS PARA CAMBIAR DE RAMO -->
+
+    <div class="flechas-flores">
+
+      <!-- ESTADO 1 -->
+      <div class="flechas-slide flechas-1">
+        <label for="flor-7" aria-label="Anterior">&#10094;</label>
+        <label for="flor-2" aria-label="Siguiente">&#10095;</label>
+      </div>
+
+      <!-- ESTADO 2 -->
+      <div class="flechas-slide flechas-2">
+        <label for="flor-1" aria-label="Anterior">&#10094;</label>
+        <label for="flor-3" aria-label="Siguiente">&#10095;</label>
+      </div>
+
+      <!-- ESTADO 3 -->
+      <div class="flechas-slide flechas-3">
+        <label for="flor-2" aria-label="Anterior">&#10094;</label>
+        <label for="flor-4" aria-label="Siguiente">&#10095;</label>
+      </div>
+
+      <!-- ESTADO 4 -->
+      <div class="flechas-slide flechas-4">
+        <label for="flor-3" aria-label="Anterior">&#10094;</label>
+        <label for="flor-5" aria-label="Siguiente">&#10095;</label>
+      </div>
+
+      <!-- ESTADO 5 -->
+      <div class="flechas-slide flechas-5">
+        <label for="flor-4" aria-label="Anterior">&#10094;</label>
+        <label for="flor-6" aria-label="Siguiente">&#10095;</label>
+      </div>
+
+      <!-- ESTADO 6 -->
+      <div class="flechas-slide flechas-6">
+        <label for="flor-5" aria-label="Anterior">&#10094;</label>
+        <label for="flor-7" aria-label="Siguiente">&#10095;</label>
+      </div>
+
+      <!-- ESTADO 7 -->
+      <div class="flechas-slide flechas-7">
+        <label for="flor-6" aria-label="Anterior">&#10094;</label>
+        <label for="flor-1" aria-label="Siguiente">&#10095;</label>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <section class="ubicacion">
+      <div class="ubicacion-texto">
+        <p>Encontranos en</p>
+        <h3>Palermo Soho,</h3>
+        <p>sobre la calle El Salvador al 2073.</p>
+        <p>De lunes a sábado de <strong>10:00 a 20:00 hs</strong></p>
+      </div>
+      <div class="ubicacion-mapa">
+     <div class="ubicacion-mapa">
+  <iframe
+    src="https://www.google.com/maps?q=El+Salvador+4600,+Palermo,+Buenos+Aires,+Argentina&z=17&output=embed"
+    title="Mapa de ubicación de Plan B en Palermo Soho"
+    loading="lazy"
+    allowfullscreen></iframe>
+</div>
+
+    </section>
+
+    <section class="galeria">
+      <img src="Imagenes/Inicio/mesas2.jpg" alt="Epsacio" class="foto-alta">
+      <div class="galeria-columna">
+        <img src="Imagenes/Inicio/medialuna con jyq.jpg" alt="Croissant de jamón y queso">
+        <img src="Imagenes/Inicio/cafe.jpg" alt="Taza de café negro">
+      </div>
+      <img src="Imagenes/Inicio/mesas1.jpg" alt="Mesas y ventanal de Plan B" class="foto-alta">
+      <div class="galeria-columna">
+        <img src="Imagenes/Inicio/cookies.jpg" alt="Cookies con chips de chocolate">
+        <img src="Imagenes/Inicio/avocado toast.jpg" alt="Tostada con palta y huevo">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="pie-horarios">
+      <h4>Horarios</h4>
+      <p>De lunes a sábados de 8 a 20</p>
+    </div>
+    <div class="pie-copy">
+      <p>&copy; 2026 PLAN B</p>
+    </div>
+    <div class="pie-contacto">
+      <p>@PlanBcaf</p>
+      <p>Hola@planbcafe.com.</p>
+    </div>
+  </footer>
+
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a
+  href="https://wa.me/5491130460145?text=Hola%2C%20quiero%20hacer%20una%20consulta%20a%20Plan%20B"
+
+  class="whatsapp-flotante"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar a Plan B por WhatsApp"
+  title="Escribinos por WhatsApp"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    aria-hidden="true"
+  >
+    <path fill="currentColor" d="M16 .8A15.2 15.2 0 0 0 2.9 23.7L.8 31.2l7.7-2A15.2 15.2 0 1 0 16 .8zm0 27.6a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A12.4 12.4 0 1 1 16 28.4zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.4 3.5 1.6 3.7c.2.2 2.7 4.1 6.6 5.7.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/>
+  </svg>
+</a>
+
+
+</body>
+</html>

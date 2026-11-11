@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Plan B</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO (igual que en las otras páginas, pero "Contacto" queda activo) -->
+  <header class="encabezado">
+    <a href="index.html" class="logo">
+      <img src="Imagenes/Logo.png" alt="Logo de Plan B">
+    </a>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="espacio.html">Espacio</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+<a href="Carrito.html" class="icono-carrito" aria-label="Carrito" title="Carrito">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="26" height="26"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       aria-hidden="true">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+  </svg>
+</a>
+
+    </nav>
+  </header>
+
+  <main class="pagina-contacto">
+
+    <h1 class="titulo-contacto">Contacto</h1>
+
+    <!-- DATOS DE CONTACTO -->
+    <ul class="datos-contacto">
+      <li>@PlanBcafe</li>
+      <li>PlanB@gmail.com</li>
+      <li>1136787636</li>
+    </ul>
+
+    <div class="contacto-contenido">
+
+      <!-- FORMULARIO DE RESERVA -->
+      <section class="reserva">
+        <h2>Reservá tu mesa</h2>
+
+        <form id="form-reserva">
+
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+
+          <label for="personas">Cantidad de personas</label>
+          <input type="number" id="personas" name="personas" min="1" max="12" required>
+
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required>
+
+          <label for="horario">Horario</label>
+          <input type="time" id="horario" name="horario" min="08:00" max="20:00" required>
+
+          <label for="sector">Sector</label>
+          <select id="sector" name="sector" required>
+            <option value="" disabled selected>Elegí un sector</option>
+            <option value="Salón">Estudio/trabajo</option>
+            <option value="Ventanal">Juegos</option>
+          </select>
+
+          <button type="submit" class="boton-reserva">Confirmar reserva</button>
+
+          <!-- Mensaje que aparece al confirmar -->
+          <p id="mensaje-reserva" class="mensaje-reserva" role="status" hidden></p>
+        </form>
+      </section>
+
+      <!-- UBICACIÓN -->
+      <aside class="ubicacion-contacto">
+        <p>Encontranos en</p>
+        <h3>Palermo Soho,</h3>
+        <p>sobre la calle El Salvador al 2073</p>
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps?q=El+Salvador+4600,+Palermo,+Buenos+Aires,+Argentina&z=17&output=embed"
+          title="Mapa de ubicación de Plan B en Palermo Soho"
+          loading="lazy"
+          allowfullscreen></iframe>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- PIE DE PÁGINA (igual que en las otras páginas) -->
+  <footer class="pie">
+    <div class="pie-horarios">
+      <h4>Horarios</h4>
+      <p>De lunes a sábados de 8 a 20</p>
+    </div>
+    <div class="pie-copy">
+      <p>&copy; 2026 PLAN B</p>
+    </div>
+    <div class="pie-contacto">
+      <p>@PlanBcaf</p>
+      <p>Hola@planbcafe.com</p>
+    </div>
+  </footer>
+
+  <script>
+    const formulario = document.getElementById("form-reserva");
+    const mensaje = document.getElementById("mensaje-reserva");
+    const campoFecha = document.getElementById("fecha");
+
+    // No permite elegir fechas pasadas
+    campoFecha.min = new Date().toISOString().split("T")[0];
+
+    formulario.addEventListener("submit", function (evento) {
+      evento.preventDefault();   // evita que la página se recargue
+
+      const nombre = document.getElementById("nombre").value;
+      mensaje.textContent = "¡Reserva exitosa! Te esperamos, " + nombre + ".";
+      mensaje.hidden = false;
+
+      formulario.reset();        // vacía los campos
+    });
+  </script>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a
+  href="https://wa.me/5491130460145?text=Hola%2C%20quiero%20hacer%20una%20consulta%20a%20Plan%20B"
+
+  class="whatsapp-flotante"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar a Plan B por WhatsApp"
+  title="Escribinos por WhatsApp"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    aria-hidden="true"
+  >
+    <path fill="currentColor" d="M16 .8A15.2 15.2 0 0 0 2.9 23.7L.8 31.2l7.7-2A15.2 15.2 0 1 0 16 .8zm0 27.6a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A12.4 12.4 0 1 1 16 28.4zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.4 3.5 1.6 3.7c.2.2 2.7 4.1 6.6 5.7.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/>
+  </svg>
+</a>
+
+</body>
+</html>

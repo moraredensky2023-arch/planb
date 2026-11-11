@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú | Plan B</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <a href="index.html" class="logo">
+      <img src="Imagenes/Logo.png" alt="Logo de Plan B">
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html" class="activo">Menú</a>
+      <a href="espacio.html">Espacio</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="contacto.html">Contacto</a>
+      
+<a href="Carrito.html" class="icono-carrito" aria-label="Carrito" title="Carrito">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="26" height="26"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       aria-hidden="true">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+  </svg>
+</a>
+
+    </nav>
+  </header>
+
+  <main class="pagina-menu">
+    <h1 class="titulo-menu">Menú</h1>
+
+    <div class="menu-interactivo">
+
+      <!-- CUATRO CATEGORÍAS -->
+      <input class="selector-categoria" type="radio"
+             name="categoria-menu" id="cat-salado" checked>
+
+      <input class="selector-categoria" type="radio"
+             name="categoria-menu" id="cat-pasteleria">
+
+      <input class="selector-categoria" type="radio"
+             name="categoria-menu" id="cat-infusiones">
+
+      <input class="selector-categoria" type="radio"
+             name="categoria-menu" id="cat-brunch">
+
+      <!-- BOTONES -->
+      <div class="categorias">
+        <label class="categoria" for="cat-salado">Salado</label>
+        <label class="categoria" for="cat-pasteleria">Pastelería</label>
+        <label class="categoria" for="cat-infusiones">Infusiones</label>
+        <label class="categoria" for="cat-brunch">Brunch</label>
+      </div>
+
+      <div class="menu-contenido">
+
+        <div class="menu-listas">
+
+          <!-- =====================================
+               SALADO: 5 PRODUCTOS
+          ====================================== -->
+          <section class="lista-productos lista-salado">
+
+            <article class="producto">
+              <img src="Imagenes/Comida/medialuna con jyq2.jpg"
+                   alt="Medialuna con jamón y queso">
+              <div class="producto-info">
+                <h3>Medialuna con Jamón y queso</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$3.500</span>
+            </article>
+
+            <article class="producto">
+              <img src="Imagenes/Comida/tostado.jpg"
+                   alt="Tostado con jamón y queso">
+              <div class="producto-info">
+                <h3>Tostado con jamón y queso</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+            <article class="producto">
+              <img src="Imagenes/Comida/ avocado toast.jpg"
+                   alt="Avocado toast">
+              <div class="producto-info">
+                <h3>Avocado toast</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$7.000</span>
+            </article>
+
+            <article class="producto">
+              <img src="Imagenes/Comida/chipa.jpg" alt="Chipa">
+              <div class="producto-info">
+                <h3>Chipa</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$3.000</span>
+            </article>
+
+            <article class="producto">
+              <img src="Imagenes/Comida/scon de queso.jpg"
+                   alt="Scon de cuatro quesos">
+              <div class="producto-info">
+                <h3>Scon de cuatro quesos</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+          </section>
+
+          <!-- =====================================
+               PASTELERÍA: 8 PRODUCTOS
+          ====================================== -->
+          <section class="lista-productos lista-pasteleria">
+
+            <!-- PASTELERÍA FOTO 1 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/cookie chocolate.jpg"
+                   alt="Cookie de chocolate">
+              <div class="producto-info">
+                <h3>Cookie de chocolate</h3>
+                <p>Opción con tac</p>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+            <!-- PASTELERÍA FOTO 2 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/cookie pistacho.jpg"
+                   alt="Cookie de pistacho">
+              <div class="producto-info">
+                <h3>Cookie de pistacho</h3>
+                <p>Opción con tac</p>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+            <!-- PASTELERÍA FOTO 3 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/cookies2.jpg"
+                   alt="Cookie de vainilla">
+              <div class="producto-info">
+                <h3>Cookie de vainilla con chips de chocolate</h3>
+                <p>Opción con tac</p>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+            <!-- PASTELERÍA FOTO 4 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/budin.jpg" alt="budin">
+              <div class="producto-info">
+                <h3>Budin de limón</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$4.000</span>
+            </article>
+
+            <!-- PASTELERÍA FOTO 5 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/alfajores.jpg"
+                   alt="alfajores">
+              <div class="producto-info">
+                <h3>Alfajores</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$2.000 c/u</span>
+            </article>
+
+            <!-- PASTELERÍA FOTO 6 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/medialunas.jpg"
+                   alt="medialunas">
+              <div class="producto-info">
+                <h3>Medialunas</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+            <!-- PASTELERÍA FOTO 7 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/torta.jpg" alt="torta">
+              <div class="producto-info">
+                <h3>Porción de torta</h3>
+                <p>Opciónes con y sin tac</p>
+              </div>
+              <span class="precio">$7.000</span>
+            </article>
+
+            <!-- PASTELERÍA FOTO 8 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/cupcakes.jpg"
+                   alt="pancakes">
+              <div class="producto-info">
+                <h3>Pancakes de vainilla con pasta de mani y frutos rojos</h3>
+                <p>Opción con y sin tac</p>
+              </div>
+              <span class="precio">$7.000 c/u</span>
+            </article>
+
+          </section>
+          <!-- FIN DE PASTELERÍA: CIERRE CORREGIDO -->
+
+          <!-- =====================================
+               INFUSIONES: 8 PRODUCTOS
+          ====================================== -->
+          <section class="lista-productos lista-infusiones">
+
+            <!-- INFUSIONES FOTO 1 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/cafe2.jpg" alt="cafe">
+              <div class="producto-info">
+                <h3>Café</h3>
+              </div>
+              <span class="precio">$4.000</span>
+            </article>
+
+            <!-- INFUSIONES FOTO 2 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/cafe frio.jpg"
+                   alt="cafe frio">
+              <div class="producto-info">
+                <h3>Café frío</h3>
+              </div>
+              <span class="precio">$4.000</span>
+            </article>
+
+            <!-- INFUSIONES FOTO 3 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/caramel latte.jpg"
+                   alt="cafe caramel">
+              <div class="producto-info">
+                <h3>Caramel latte</h3>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+            <!-- INFUSIONES FOTO 4 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/jugo de naranja.jpg"
+                   alt="jugo de naranja">
+              <div class="producto-info">
+                <h3>Jugo de naranja</h3>
+              </div>
+              <span class="precio">$5.000</span>
+            </article>
+
+            <!-- INFUSIONES FOTO 5 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/licuado de banana.jpg"
+                   alt="licuado">
+              <div class="producto-info">
+                <h3>Licuado de banana</h3>
+              </div>
+              <span class="precio">$6.000</span>
+            </article>
+
+            <!-- INFUSIONES FOTO 6 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/licuado de frutilla.jpg"
+                   alt="licuado">
+              <div class="producto-info">
+                <h3>Licuado de frutilla</h3>
+              </div>
+              <span class="precio">$6.000</span>
+            </article>
+
+            <!-- INFUSIONES FOTO 7 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/limonada.jpg"
+                   alt="limonada">
+              <div class="producto-info">
+                <h3>Limonada con menta y jengibre</h3>
+              </div>
+              <span class="precio">$6.000</span>
+            </article>
+
+            <!-- INFUSIONES FOTO 8 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/te.jpg" alt="te">
+              <div class="producto-info">
+                <h3>Té negro</h3>
+              </div>
+              <span class="precio">$4.000</span>
+            </article>
+
+          </section>
+          <!-- FIN DE INFUSIONES -->
+
+          <!-- =====================================
+               BRUNCH: 3 PRODUCTOS
+          ====================================== -->
+          <section class="lista-productos lista-brunch">
+
+            <!-- BRUNCH FOTO 1 -->
+            <article class="producto">
+              <img src="Imagenes/Comida/brunch avocado.jpg" alt="brunch">
+              <div class="producto-info">
+                <h3>Brunch avocado</h3>
+             <p>Tostada de pan integral con palta, salmon y huevo poche; Tostadas de pan blanco y negro con queso crema, mermelada y palta; Jugo de naranja y café.   </p>
+              </div>
+              <span class="precio">$10.000</span>
+            </article>
+
+            <!-- BRUNCH FOTO 2 -->
+           <article class="producto">
+              <img src="Imagenes/Comida/brunch bagel.jpg" alt="brunch">
+              <div class="producto-info">
+                <h3>Brunch bagel</h3>
+             <p>Bagel relleno de queso crema, rucula y salmon; Tostadas de pan negro con queso crema, mermelada y palta; Cookie a eleccion; Cafe frio y jugo de naranja.  </p>
+              </div>
+              <span class="precio">$12.000</span>
+            </article>
+
+            <!-- BRUNCH FOTO 3 -->
+           <article class="producto">
+              <img src="Imagenes/Comida/brunch tostado.jpg" alt="brunch">
+              <div class="producto-info">
+                <h3>Brunch tostado</h3>
+             <p>Tostado de jamon y queso; panera mixta con queso crema, palta y mermelada; Alfajores a eleccion; Licuado a eleccion.  </p>
+              </div>
+              <span class="precio">$10.000</span>
+            </article>
+
+          </section>
+          <!-- FIN DE BRUNCH -->
+
+        </div>
+        <!-- FIN DE LAS LISTAS DE PRODUCTOS -->
+
+        <!-- RECOMENDADOS Y MÁS PEDIDOS -->
+        <aside class="destacados">
+
+          <section class="caja-destacados">
+            <h2>Recomendados</h2>
+
+            <figure>
+              <img src="Imagenes/Comida/caramel latte.jpg"
+                   alt="Caramel latte">
+              <figcaption>Caramel latte</figcaption>
+            </figure>
+
+            <figure>
+              <img src="Imagenes/Comida/torta.jpg"
+                   alt="Carrot cake">
+              <figcaption>Carrot cake</figcaption>
+            </figure>
+          </section>
+
+          <section class="caja-destacados">
+            <h2>Más pedidos</h2>
+
+            <figure>
+              <img src="Imagenes/Comida/cafe frio.jpg"
+                   alt="Café frío">
+              <figcaption>Café frío</figcaption>
+            </figure>
+
+            <figure>
+              <img src="Imagenes/Comida/ avocado toast.jpg"
+                   alt="Avocado toast">
+              <figcaption>Avocado toast</figcaption>
+            </figure>
+          </section>
+
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- PROMOCIONES -->
+    <section class="promociones">
+      <h2>Promociones</h2>
+
+      <div class="promo">
+        <h3>
+          Promo Amigos
+          <span>(Válido de 16:00 a 19:00 hs)</span>
+        </h3>
+        <p>
+          2 Cafés con leche + 2 porciones de torta
+          o budín del día para compartir.
+          Precio: <strong>$10.000</strong>
+        </p>
+      </div>
+
+      <div class="promo">
+        <h3>Combo Estudiante</h3>
+        <p>
+          Tostado con jamón y queso + Bebida
+          (Limonada o Jugo exprimido).
+          Precio: <strong>$7.500</strong>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="pie-horarios">
+      <h4>Horarios</h4>
+      <p>De lunes a sábados de 8 a 20</p>
+    </div>
+
+    <div class="pie-copy">
+      <p>&copy; 2026 PLAN B</p>
+    </div>
+
+    <div class="pie-contacto">
+      <p>@PlanBcaf</p>
+      <p>Hola@planbcafe.com</p>
+    </div>
+  </footer>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a
+  href="https://wa.me/5491130460145?text=Hola%2C%20quiero%20hacer%20una%20consulta%20a%20Plan%20B"
+
+  class="whatsapp-flotante"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar a Plan B por WhatsApp"
+  title="Escribinos por WhatsApp"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    aria-hidden="true"
+  >
+    <path fill="currentColor" d="M16 .8A15.2 15.2 0 0 0 2.9 23.7L.8 31.2l7.7-2A15.2 15.2 0 1 0 16 .8zm0 27.6a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A12.4 12.4 0 1 1 16 28.4zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.4 3.5 1.6 3.7c.2.2 2.7 4.1 6.6 5.7.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/>
+  </svg>
+</a>
+
+</body>
+</html>
